@@ -133,22 +133,18 @@ header ul {
 footer {
   color: #211f2d; }
 
-/* Smaller than standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   header ul {
     padding-top: 85px; }
     header ul li {
       font-size: 20px;
       line-height: 28px; }
-
-  h1 {
+  header h1 {
     background-size: 75%;
     margin-bottom: 0px;
     height: 310px; }
-
-  h2 {
+  header h2 {
     font-size: 30px; } }
-/* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   header h1 {
     width: 100%;
@@ -161,7 +157,6 @@ footer {
     header ul li {
       font-size: 16px;
       line-height: 1.5em; } }
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container .nine.columns.alpha {
     width: 52%  !important; }
@@ -188,9 +183,9 @@ footer {
     margin-bottom: 25px; }
 
   h2 {
-    padding: 25px 0;
-    margin-top: -10%;
     font-size: 30px;
+    margin-top: -10%;
+    padding: 25px 0;
     margin-bottom: 25px; }
 
   .twelve ul {
