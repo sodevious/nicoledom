@@ -159,7 +159,7 @@ footer {
       line-height: 1.5em; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container .nine.columns.alpha {
-    width: 52%  !important; }
+    width: 52% !important; }
   .container .seven.columns {
     width: 48% !important; }
 
