@@ -119,6 +119,38 @@ header {
 		width: 50%;
 		float: left;
 		padding-top: 0px;
+
+		li {
+			width: 48%;
+			float: left;
+			margin-right: 4%;
+			line-height: 24px;
+			margin-top: 8px;
+			margin-bottom: 24px;
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+
+			a:hover {
+				color: white;
+				top: 1px;
+				position: relative;
+			}
+
+			i {
+				margin-right: 2px;
+				color: mix($purple, $teal, 30%);
+				font-size: 15px;
+			}
+			span {
+				// background: pink;
+				display: block;
+color: lighten($teal, 5%);
+				font-size: 13px;
+
+			}
+		}
 	}
 
 	aside {
@@ -127,8 +159,8 @@ header {
 		font-family: $serif;
 
 		p {
-			font-size: 17px;
-			line-height: 30px;
+			font-size: 16px;
+			line-height: 22px;
 		}
 
 		a {
@@ -151,6 +183,8 @@ header {
 				text-shadow: 0px -1px 0px lighten($purple, 25%);
 				background: lighten($purple, 15%);
 				box-shadow: 0px 3px 0px lighten($purple, 10%);
+
+				// transition
 			}
 		}
 	}
