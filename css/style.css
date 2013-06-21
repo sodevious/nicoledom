@@ -133,9 +133,9 @@ header ul {
   padding: 25px;
   box-sizing: border-box; }
   .hireme ul {
-    width: 50%;
+    width: 56%;
     float: left;
-    padding-top: 0px; }
+    padding: 0px; }
     .hireme ul li {
       width: 48%;
       float: left;
@@ -147,8 +147,6 @@ header ul {
         margin-right: 0; }
       .hireme ul li a:hover {
         color: white;
-        top: 2px;
-        position: relative;
         -webkit-transition: all 0.1s ease-in;
         -moz-transition: all 0.1s ease-in;
         transition: all 0.1s ease-in; }
@@ -175,7 +173,7 @@ header ul {
       background: #79b7b0;
       display: block;
       text-align: center;
-      padding: 12.5px;
+      padding: 8.33333px;
       font-size: 20px;
       text-decoration: none;
       color: #2f2b3f;
@@ -187,16 +185,17 @@ header ul {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
+      border-bottom-right-radius: 5px;
+      border: 3px solid transparent; }
       .hireme aside a:hover {
         text-shadow: 0px -1px 0px #685f8b;
         background: #585076;
         box-shadow: 0px 3px 0px #46405d;
         top: 2px;
         position: relative;
-        -webkit-transition: all 0.2s ease-in;
-        -moz-transition: all 0.2s ease-in;
-        transition: all 0.2s ease-in; }
+        -webkit-transition: all 0.15s ease-in;
+        -moz-transition: all 0.15s ease-in;
+        transition: all 0.15s ease-in; }
 
 footer {
   color: #514a6c;
@@ -216,12 +215,19 @@ footer {
   h2 span {
     font-size: 24px; }
 
-  .hireme ul li {
-    font-size: 20px;
-    line-height: 26px; }
-  .hireme aside p {
-    font-size: 15px;
-    line-height: 22px; } }
+  .hireme ul {
+    width: 56%; }
+    .hireme ul li {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px; }
+      .hireme ul li span {
+        font-size: 12px; }
+  .hireme aside {
+    width: 38%; }
+    .hireme aside p {
+      font-size: 13px;
+      line-height: 20px; } }
 @media only screen and (max-width: 767px) {
   header h1 {
     width: 100%;
@@ -239,8 +245,11 @@ footer {
     width: 100%;
     padding: 0; }
   .hireme ul li {
-    font-size: 24px;
-    line-height: 36px; } }
+    font-size: 24px; }
+  .hireme aside {
+    width: 90%;
+    margin: 0px auto;
+    float: none; } }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container .nine.columns.alpha {
     width: 52% !important; }
@@ -287,9 +296,14 @@ footer {
     padding: 0; }
     .hireme ul {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      margin-bottom: 25px; }
       .hireme ul li {
-        line-height: 1.3em;
-        font-size: 16px; }
+        width: 100%; }
+        .hireme ul li span {
+          font-size: 16px; }
     .hireme aside {
-      margin: 25px 0; } }
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 25px; } }

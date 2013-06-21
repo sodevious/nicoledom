@@ -116,9 +116,9 @@ header {
 	box-sizing: border-box;
 
 	ul {
-		width: 50%;
+		width: 56%;
 		float: left;
-		padding-top: 0px;
+		padding: 0px;
 
 		li {
 			width: 48%;
@@ -131,11 +131,7 @@ header {
 
 			a:hover {
 				color: white;
-				top: 2px;
-				position: relative;
-
-				 				@include transition(all .1s ease-in);		
-
+				@include transition(all .1s ease-in);
 			}
 
 			span:hover {
@@ -171,7 +167,7 @@ header {
 			background: $teal;
 			display: block;
 			text-align: center;
-			padding: $gutter/2;
+			padding: $gutter/3;
 			font-size: 20px;
 			text-decoration: none;
 			color: $purple;
@@ -182,16 +178,18 @@ header {
 			box-shadow: 0px 3px 0px  darken($teal, 20%);
 			@include border-top-radius(5px);
 			@include border-bottom-radius(5px);
+			border: 3px solid transparent; // Safari border fix
+
 
 			&:hover {
 				text-shadow: 0px -1px 0px lighten($purple, 25%);
 				background: lighten($purple, 18%);
 				box-shadow: 0px 3px 0px lighten($purple, 10%);
-				
+
 				top: 2px;
 				position: relative;
- 				@include transition(all .2s ease-in);		
- 	}
+ 				@include transition(all .15s ease-in);		
+ 			}
 		}
 	}
 }
@@ -218,13 +216,21 @@ footer { color: lighten($purple, 15%); text-shadow: 0px -1px 0px darken($purple,
 
 	h2 span { font-size: 24px; }
 	.hireme {
-		ul li {
-			font-size: 20px;
-			line-height: 26px;
+		ul {
+			width: 56%;
+			li {
+				font-size: 20px;
+				line-height: 24px;
+				margin-bottom: 15px;
+				span { font-size: 12px; } 
+			}
 		}
-		aside p {
-			font-size: 15px;
-			line-height: 22px;
+		aside {
+			width: 38%;
+			p {
+				font-size: 13px;
+				line-height: 20px;
+			}
 		}
 	}
 }
@@ -252,9 +258,11 @@ footer { color: lighten($purple, 15%); text-shadow: 0px -1px 0px darken($purple,
 			width: 100%;
 			padding: 0;
 		}
-		ul li { 
-			font-size: 24px; 
-			line-height: 36px;
+		ul li { font-size: 24px; }
+		aside {
+			width: 90%;
+			margin: 0px auto;
+			float: none;
 		}
 	}
 }
@@ -312,11 +320,19 @@ footer { color: lighten($purple, 15%); text-shadow: 0px -1px 0px darken($purple,
 		ul {
 			padding: 0;
 			margin: 0;
+			margin-bottom: $gutter;
 			li {
-				line-height: 1.3em;
-				font-size: 16px;
+				width: 100%;
+				span {
+					font-size: 16px;
+				}
 			}
 		}
-		aside { margin: $gutter 0; }
+		aside {
+			width: 100%;	
+			margin: 0;
+			padding: 0;
+			margin-bottom: $gutter;
+		}
 	}
 }
