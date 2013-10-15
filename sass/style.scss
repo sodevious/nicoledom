@@ -16,7 +16,6 @@ $gutter: 25px;
 $sans-serif: 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
 $serif: 'Bitter', Copse, Cambria, Georgia, serif;
 
-@import 'layout.scss';
 @import 'bourbon/bourbon';
 
 // Basics
@@ -161,6 +160,10 @@ header {
 		p {
 			font-size: 16px;
 			line-height: 22px;
+		}
+
+		span {
+			font-size: 20px;
 		}
 
 		a {
