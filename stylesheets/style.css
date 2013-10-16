@@ -1,0 +1,499 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Source+Sans+Pro:300,400,700);
+/*
+* Copyright 2013, Nicole Dominguez
+* Tools used: Skeleton, Github, Adobe Creative Cloud, Sublime Text 2
+*/
+/* line 5, ../sass/layout.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 14, ../sass/layout.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 16, ../sass/layout.scss */
+body {
+  line-height: 1;
+}
+
+/* line 18, ../sass/layout.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 20, ../sass/layout.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 23, ../sass/layout.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 26, ../sass/layout.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 23, ../sass/style.scss */
+body {
+  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  background: #2f2b3f;
+  color: #e3e3e3;
+}
+
+/* line 31, ../sass/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #79b7b0;
+  font-weight: normal;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: -0.04em;
+  font-weight: 300;
+}
+
+/* line 39, ../sass/style.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+/* line 41, ../sass/style.scss */
+.about img {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 43, ../sass/style.scss */
+h1 {
+  font-size: 115px;
+  line-height: 60px;
+  margin-bottom: 16px;
+  text-indent: -9999px;
+  background-image: url("../img/nicole-dominguez.png");
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 270px;
+  padding-left: 25px;
+  background-size: 70%;
+  margin-bottom: 35px;
+  margin-top: 50px;
+  float: left;
+}
+
+/* line 57, ../sass/style.scss */
+h2 {
+  font-size: 48px;
+  word-spacing: 2px;
+  line-height: 48px;
+  margin: 31px 0 50px;
+}
+/* line 63, ../sass/style.scss */
+h2 span {
+  color: #c7bcd1;
+  display: block;
+  word-spacing: 3px;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: right;
+}
+
+/* line 73, ../sass/style.scss */
+h3 {
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 8px;
+}
+
+/* line 74, ../sass/style.scss */
+h4 {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+
+/* line 76, ../sass/style.scss */
+p {
+  margin: 0 0 20px 0;
+  font-family: "Bitter", Copse, Cambria, Georgia, serif;
+}
+
+/* line 77, ../sass/style.scss */
+p img {
+  margin: 0;
+}
+
+/* line 79, ../sass/style.scss */
+em {
+  font-style: italic;
+}
+
+/* line 80, ../sass/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 81, ../sass/style.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 83, ../sass/style.scss */
+a:hover, a:focus {
+  color: #000;
+}
+
+/* line 86, ../sass/style.scss */
+ul, ol {
+  margin-bottom: 20px;
+}
+
+/* line 87, ../sass/style.scss */
+ul {
+  list-style: none outside;
+  padding: 25px;
+  font-family: "Bitter", Copse, Cambria, Georgia, serif;
+  font-size: 20px;
+}
+/* line 93, ../sass/style.scss */
+ul li {
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #5c547c;
+}
+/* line 98, ../sass/style.scss */
+ul li a {
+  text-decoration: none;
+  color: #bbdbd7;
+}
+/* line 101, ../sass/style.scss */
+ul li a:hover {
+  color: #8ac0ba;
+}
+
+/* line 108, ../sass/style.scss */
+header ul {
+  padding-top: 90px;
+}
+/* line 111, ../sass/style.scss */
+header ul li {
+  font-size: 22px;
+  text-align: right;
+  color: #413d4f;
+}
+
+/* line 119, ../sass/style.scss */
+.hireme {
+  padding: 25px;
+  box-sizing: border-box;
+}
+/* line 123, ../sass/style.scss */
+.hireme ul {
+  width: 56%;
+  float: left;
+  padding: 0px;
+}
+/* line 128, ../sass/style.scss */
+.hireme ul li {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+/* line 135, ../sass/style.scss */
+.hireme ul li:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 137, ../sass/style.scss */
+.hireme ul li a:hover {
+  color: white;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+/* line 142, ../sass/style.scss */
+.hireme ul li i {
+  margin-right: 2px;
+  font-size: 18px;
+  color: #628d8e;
+  text-shadow: 0px -1px 0px #242130;
+}
+/* line 148, ../sass/style.scss */
+.hireme ul li span {
+  display: block;
+  font-size: 13px;
+  color: #8ac0ba;
+  text-shadow: 0px -1px 0px #242130;
+}
+/* line 154, ../sass/style.scss */
+.hireme ul li span:hover {
+  color: white;
+}
+/* line 158, ../sass/style.scss */
+.hireme aside {
+  width: 40%;
+  float: right;
+  font-family: "Bitter", Copse, Cambria, Georgia, serif;
+}
+/* line 163, ../sass/style.scss */
+.hireme aside p {
+  font-size: 14px;
+  line-height: 20px;
+}
+/* line 168, ../sass/style.scss */
+.hireme aside span {
+  font-size: 21px;
+  display: block;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}
+/* line 177, ../sass/style.scss */
+.hireme aside a {
+  background: #79b7b0;
+  display: block;
+  text-align: center;
+  padding: 8.33333px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2f2b3f;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0px -1px 0px #9ac9c4;
+  box-shadow: 0px 3px 0px #47837d;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 3px solid transparent;
+}
+/* line 195, ../sass/style.scss */
+.hireme aside a:hover {
+  text-shadow: 0px -1px 0px #685f8b;
+  background: #585076;
+  box-shadow: 0px 3px 0px #46405d;
+  top: 2px;
+  position: relative;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+
+/* line 209, ../sass/style.scss */
+footer {
+  color: #5c547c;
+  margin-top: 30px;
+  font-size: 15px;
+  text-align: center;
+  text-shadow: 0px -1px 0px #181621;
+}
+/* line 215, ../sass/style.scss */
+footer a {
+  color: #9e97b8;
+  text-decoration: none;
+}
+/* line 216, ../sass/style.scss */
+footer a:hover {
+  color: #9e97b8;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 222, ../sass/style.scss */
+  header ul {
+    padding-top: 85px;
+  }
+  /* line 224, ../sass/style.scss */
+  header ul li {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  /* line 229, ../sass/style.scss */
+  header h1 {
+    background-size: 65%;
+    margin-bottom: 0px;
+    height: 310px;
+  }
+
+  /* line 236, ../sass/style.scss */
+  h2 {
+    font-size: 45px;
+  }
+  /* line 237, ../sass/style.scss */
+  h2 span {
+    font-size: 26px;
+  }
+
+  /* line 240, ../sass/style.scss */
+  .hireme ul {
+    width: 56%;
+  }
+  /* line 242, ../sass/style.scss */
+  .hireme ul li {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  /* line 246, ../sass/style.scss */
+  .hireme ul li span {
+    font-size: 12px;
+  }
+  /* line 249, ../sass/style.scss */
+  .hireme aside {
+    width: 38%;
+  }
+  /* line 251, ../sass/style.scss */
+  .hireme aside p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 261, ../sass/style.scss */
+  header h1 {
+    width: 100%;
+    background-size: 90%;
+    height: 220px;
+    padding: 0;
+    margin: 25px;
+  }
+  /* line 268, ../sass/style.scss */
+  header ul {
+    padding-top: 25px;
+  }
+  /* line 270, ../sass/style.scss */
+  header ul li {
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+
+  /* line 278, ../sass/style.scss */
+  .hireme aside, .hireme ul {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 282, ../sass/style.scss */
+  .hireme ul li {
+    font-size: 24px;
+  }
+  /* line 283, ../sass/style.scss */
+  .hireme aside {
+    width: 90%;
+    margin: 0px auto;
+    float: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 293, ../sass/style.scss */
+  .container .nine.columns.alpha {
+    width: 52% !important;
+  }
+  /* line 294, ../sass/style.scss */
+  .container .seven.columns {
+    width: 48% !important;
+  }
+
+  /* line 297, ../sass/style.scss */
+  h2 {
+    padding: 25px 50px;
+    margin-top: -5%;
+    font-size: 36px;
+  }
+  /* line 301, ../sass/style.scss */
+  h2 span {
+    font-size: 26px;
+    width: 95%;
+    line-height: 1.4em;
+    margin-left: 5%;
+  }
+
+  /* line 309, ../sass/style.scss */
+  footer {
+    padding: 25px;
+  }
+
+  /* line 310, ../sass/style.scss */
+  .twelve ul {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 315, ../sass/style.scss */
+  header h1 {
+    background-size: 100%;
+    margin: 30px 0 0 0;
+    padding: 0;
+    height: 190px;
+  }
+  /* line 321, ../sass/style.scss */
+  header ul {
+    margin-bottom: 25px;
+  }
+  /* line 323, ../sass/style.scss */
+  header ul li {
+    font-size: 18px;
+  }
+
+  /* line 326, ../sass/style.scss */
+  .about img {
+    display: block;
+    margin: 0px auto;
+    padding-bottom: 25px;
+    float: none;
+  }
+
+  /* line 333, ../sass/style.scss */
+  h2 {
+    font-size: 32px;
+    margin-top: -10%;
+    padding: 25px 0;
+    margin-bottom: 25px;
+  }
+  /* line 338, ../sass/style.scss */
+  h2 span {
+    font-size: 26px;
+    line-height: 1.4em;
+  }
+
+  /* line 341, ../sass/style.scss */
+  .hireme {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 344, ../sass/style.scss */
+  .hireme ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  /* line 349, ../sass/style.scss */
+  .hireme li {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 352, ../sass/style.scss */
+  .hireme li span {
+    font-size: 16px;
+  }
+  /* line 354, ../sass/style.scss */
+  .hireme aside {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+}
